@@ -35,7 +35,7 @@ const task = () => {
 };
 
 // Schedule the task to run every minute (change the schedule as needed)
-cron.schedule('* * * * *', task);
+cron.schedule('*/100 * * * * *', task);
 
 // Start the server
 const port = process.env.PORT || 3000;
